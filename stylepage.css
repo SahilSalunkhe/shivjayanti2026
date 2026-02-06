@@ -1,0 +1,334 @@
+/* =========================
+   RESET & BASE
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("shivajimaharaj.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+/* =========================
+   BLACK BLEND OVERLAY
+========================= */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.65)
+  );
+  z-index: 1;
+}
+
+/* =========================
+   CONTENT AREA
+========================= */
+.content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1100px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* =========================
+   UNIVERSITY NAME
+========================= */
+.university {
+  font-size: clamp(48px, 8vw, 150px); /* 👈 auto adjust */
+  font-weight: 700;
+  letter-spacing: 3px;
+  opacity: 0.95;
+  text-align: center;
+  line-height: 1.1;
+}
+
+
+/* =========================
+   MAIN TITLE
+========================= */
+h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 55px;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+/* =========================
+   COMPETITION BLOCKS
+========================= */
+.competitions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 35px;
+  padding-top: 200px;
+}
+
+/* =========================
+   SINGLE CARD
+========================= */
+.card {
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid #ff9933;
+  border-radius: 14px;
+  padding: 25px 15px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background: rgba(0, 0, 0, 0.65);
+}
+
+/* =========================
+   CARD TEXT
+========================= */
+.card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+
+}
+
+.card span {
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+/* =========================
+   HIGHLIGHT CARD (19 FEB)
+========================= */
+.highlight {
+  background: rgba(255, 153, 51, 0.18);
+  border: 2px solid #ff9933;
+}
+
+/* =========================
+   PRIZES SECTION
+========================= */
+.prizes {
+  font-size: 25px;
+  font-weight: 600;
+  color: #ffcc99;
+  margin-top: 30px;
+  padding-top: 100px;
+}
+
+/* =========================
+   RESPONSIVE – TABLET
+========================= */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .prizes {
+    font-size: 14px;
+  }
+}
+
+/* =========================
+   RESPONSIVE – MOBILE
+========================= */
+@media (max-width: 480px) {
+  .university {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .card {
+    padding: 20px 12px;
+  }
+}
+
+.university-bar {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 12px;        /* logo ani text madhla space */
+  z-index: 3;
+}
+
+.university {
+  margin: 0;        /* p tag default margin kadh */
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.uni-logo {
+  height: 36px;     /* logo size */
+  width: auto;
+}
+
+.card-link,
+.card-link * {
+  color: #fff !important;        /* 👈 text white */
+  text-decoration: none !important; /* 👈 underline remove */
+}
+
+/* =========================
+   CASH HERO BLOCK
+========================= */
+
+.cash-hero {
+  margin: 70px auto 0;
+  padding: 36px 46px;
+  max-width: 900px;
+  text-align: center;
+
+  background: linear-gradient(
+    145deg,
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0.9)
+  );
+
+  border-radius: 28px;
+  border: 2px solid rgba(255,204,112,0.5);
+
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.9),
+    0 0 60px rgba(255,204,112,0.35);
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* GOLD GLOW EDGE */
+.cash-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 28px;
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    rgba(255,204,112,0.25),
+    transparent 70%
+  );
+  animation: cashSweep 5s infinite linear;
+}
+
+@keyframes cashSweep {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
+}
+
+/* CASH BADGE */
+.cash-badge {
+  display: inline-block;
+  padding: 10px 22px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 800;
+
+  color: #022c22;
+  background: linear-gradient(135deg, #22c55e, #4ade80);
+  border-radius: 30px;
+
+  box-shadow: 0 12px 30px rgba(34,197,94,0.6);
+}
+
+/* MAIN LINE */
+.cash-hero h2 {
+  font-size: 36px;
+  margin-bottom: 14px;
+  letter-spacing: 2px;
+
+  background: linear-gradient(
+    90deg,
+    #ffcc70,
+    #ffffff,
+    #ff8c00
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0 0 22px rgba(255,204,112,0.7);
+}
+
+/* SUBTEXT */
+.cash-hero p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  opacity: 0.95;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+  width: 100%;
+  text-align: center;          /* 👈 MAIN FIX */
+  padding: 20px 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  opacity: 0.85;
+
+  background: rgba(0, 0, 0, 0.6);
+  border-top: 1px solid rgba(255, 204, 112, 0.35);
+
+  position: relative;          /* ❌ absolute काढलं */
+  left: 0;
+  bottom: 0;
+}
+
+/* GOLD LINE ABOVE FOOTER */
+.site-footer::before {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 1px;
+  margin: 0 auto 12px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #ffd166,
+    transparent
+  );
+}
+
+
+
+

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Competition Registration | Shivjayanti 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+<!-- ================= PAGE WRAPPER ================= -->
+<div class="quiz-page">
+
+  <!-- ✅ EVENT INFO (MOVED INSIDE quiz-page) -->
+  
+  <!-- ================= QUIZ DETAILS SECTION ================= -->
+  <section class="quiz-details">
+
+    <h2>Quiz Competition – Event Details</h2>
+
+    <p class="intro">
+      The Quiz Competition is one of the key events of <strong>Shivjayanti 2026</strong>.
+      It is designed to test participants’ knowledge, quick thinking, presence of mind,
+      and team coordination in a competitive yet engaging environment.
+    </p>
+<div class="event-info">
+    <div class="info-box">
+      <span class="label">📅 Date</span> <br>
+      <span class="value">16th February 2026, Monday</span>
+    </div>
+
+    <div class="info-box">
+      <span class="label">⏰ Timing</span> <br>
+      <span class="value">01:00 PM onwards</span>
+    </div>
+
+    <div class="info-box">
+      <span class="label">📍 Location</span> <br>
+      <span class="value">Pratapgad Seminar Hall</span>
+    </div>
+  </div>
+
+    <div class="detail-block">
+      <h3>Quiz Themes & Topics</h3>
+      <ul>
+        <li>Life and Legacy of Chhatrapati Shivaji Maharaj</li>
+        <li>Shivaji-era history and forts</li>
+      </ul>
+    </div>
+
+    <div class="detail-block">
+      <h3>Team Participation Rules</h3>
+      <ul>
+        <li>Participation is <strong>team-based only</strong></li>
+        <li>Minimum <strong>2 members</strong> and maximum <strong>4 members</strong></li>
+        <li>Once registered, team members <strong>cannot be changed</strong></li>
+        <li>Mobile phones are <strong>strictly prohibited</strong></li>
+      </ul>
+    </div>
+
+    <div class="detail-block">
+      <h3>⏱ Quiz Format (Tentative)</h3>
+
+      <p><strong>Round 1 – Rapid Fire Round</strong><br>
+        Quick and straightforward questions
+      </p>
+
+      <p><strong>Round 2 – Direct Answer Round</strong><br>
+        Knowledge-based questions
+      </p>
+
+      <p><strong>Round 3 – Fastest Response / Buzzer Round</strong><br>
+        Speed and accuracy matter the most
+      </p>
+
+      <p class="note">
+        👉 The final format may be modified by the organisers if required.
+      </p>
+    </div>
+
+    <section class="prize-section">
+  <h3 class="prize-title">🏆 Prizes & Recognition</h3>
+
+  <div class="prize-card winner">
+    <span class="badge top">👑 TOP PRIZE</span>
+    <h4>🥇 Winner</h4>
+    <p>Trophy + Certificate + Gift Voucher + Cash Prize</p>
+    <span class="cash-badge">💰 CASH PRIZE</span>
+  </div>
+
+  <div class="prize-card runner">
+    <h4>🥈 Runner-Up</h4>
+    <p>Certificate + Gift Voucher</p>
+  </div>
+
+  <div class="prize-card participant">
+    <h4>📜 Participation Certificates</h4>
+    <p>For all participants</p>
+  </div>
+</section>
+  <!-- ================= END QUIZ DETAILS ================= -->
+
+
+  <!-- ================= REGISTRATION FORM ================= -->
+  <section class="form-hero">
+
+    <div class="form-card">
+
+      <h1>Quiz Competition Registration</h1>
+      <p class="subtitle">Individual Participation Only</p>
+
+<form action="https://formsubmit.co/csmushivjayanti@gmail.com" method="POST">
+
+  <!-- FORM SETTINGS -->
+  <input type="hidden" name="_subject" value="Quiz Competition Registration - Shivjayanti 2026">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+
+  <!-- ✅ ONE CORRECT THANK YOU PAGE -->
+  <input 
+    type="hidden" 
+    name="_next" 
+    value="https://bejewelled-gecko-67672e.netlify.app/thankyou"
+  >
+
+  <div class="block">
+    <input type="text" name="Full Name" placeholder="Full Name" required>
+    <input type="tel" name="WhatsApp Number" placeholder="WhatsApp Number" required>
+    <input type="text" name="Department" placeholder="Department" required>
+    <input type="text" name="Year" placeholder="Year" required>
+  </div>
+
+  <div class="block">
+    <label class="block-title">Group Size</label>
+    <select name="Group Size" required>
+      <option value="" disabled selected>Select Group Size</option>
+      <option>2 Members</option>
+      <option>3 Members</option>
+      <option>4 Members</option>
+    </select>
+  </div>
+
+  <div class="block">
+    <label class="block-title">Team Members</label>
+
+    <input type="text" name="Member 1 Name" placeholder="Member 1 – Full Name" required>
+    <input type="text" name="Member 1 Dept & Year" placeholder="Member 1 – Department & Year" required>
+
+    <input type="text" name="Member 2 Name" placeholder="Member 2 – Full Name" required>
+    <input type="text" name="Member 2 Dept & Year" placeholder="Member 2 – Department & Year" required>
+
+    <input type="text" name="Member 3 Name" placeholder="Member 3 – Full Name (Optional)">
+    <input type="text" name="Member 3 Dept & Year" placeholder="Member 3 – Department & Year (Optional)">
+
+    <input type="text" name="Member 4 Name" placeholder="Member 4 – Full Name (Optional)">
+    <input type="text" name="Member 4 Dept & Year" placeholder="Member 4 – Department & Year (Optional)">
+  </div>
+
+  <div class="block">
+    <input type="tel" name="Alternate Contact Number" placeholder="Alternate Contact Number">
+  </div>
+
+  <button type="submit" class="submit-btn">
+    Complete Registration
+  </button>
+
+</form>
+
+
+    </div>
+  </section>
+  <!-- ================= END FORM ================= -->
+
+</div>
+<!-- ================= END PAGE WRAPPER ================= -->
+  <!-- ✅ FOOTER -->
+  <footer class="site-footer">
+    © 2026 Shivjayanti | Created by Sahil Salunkhe
+  </footer>
+</body>
+</html>
